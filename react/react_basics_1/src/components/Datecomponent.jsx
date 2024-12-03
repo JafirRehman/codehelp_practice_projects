@@ -1,5 +1,3 @@
-/* eslint-disable react/prop-types */
-
 const Datecomponent = (props) => {
   return (
     <div className=" flex gap-1">
