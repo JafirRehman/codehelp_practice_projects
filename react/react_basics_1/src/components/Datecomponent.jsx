@@ -1,13 +1,13 @@
-import React from 'react'
+/* eslint-disable react/prop-types */
 
 const Datecomponent = (props) => {
   return (
-    <div className="bg-pink-600">
-        <p>{props.ourdate.getDate()}</p>
-        <p>{props.ourdate.toLocaleString('en-US', {month: 'long'})}</p> 
-        <p>{props.ourdate.getFullYear()}</p>
+    <div className=" flex gap-1">
+      <p>{props.ourdate.getDate()}</p>
+      <p>{props.ourdate.toLocaleString("en-US", { month: "long" })}</p>
+      <p>{props.ourdate.getFullYear()}</p>
     </div>
-  )
-}
+  );
+};
 
-export default Datecomponent
+export default Datecomponent;
