@@ -12,7 +12,7 @@ const Card = (props) => {
   return (
     <div className="flex bg-white flex-col justify-center w-[350px] p-[10px] shadow-2xl rounded-[20px]">
       <img className="h-[200px] w-[100%] rounded-2xl" src={data.image}></img>
-      <h1 className="mt-4">{data.price}</h1>
+      <h1 className="mt-4 text-red-700">{data.price}</h1>
       <h2>{data.name}</h2>
       <p>
         {discription}
@@ -25,7 +25,7 @@ const Card = (props) => {
                   setDiscription(`${data.info.substring(0, 150)} . . . .`),
                 ]
           }
-          className=" cursor-pointer underline text-blue-700"
+          className=" cursor-pointer underline text-red-700"
         >
           {status}
         </span>
